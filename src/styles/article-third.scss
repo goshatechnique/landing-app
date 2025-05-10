@@ -1,0 +1,49 @@
+$mainColor: #f9f9f9;
+$secondaryColor: #f5f4f9;
+$mainFontColor: #38393d;
+$secondaryFontColor: #8c8f94;
+$thirdFontColor: #cecece;
+$mainIconColor: #207df6;
+
+.article-third {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  color: $mainFontColor;
+  font-size: 20px;
+}
+
+.article-third-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.article-third-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-third-p {
+  margin-left: 20px;
+}
+
+.article-third-partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+@media all and (max-width: 530px) {
+  .article-third {
+    grid-template-columns: 1fr;
+  }
+  .article-third-p {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
